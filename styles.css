@@ -1,0 +1,73 @@
+body {
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 30%; /* Flex item takes up 30% of the row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+a {
+    color: #5C6AC4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #projects {
+        flex-direction: column; /* Stack projects vertically on smaller screens */
+    }
+
+    .project {
+        flex: 1 1 100%; /* Take full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px; /* Adjust header size */
+    }
+
+}
+
+body {
+    background-color: #A2D5D0; /* Soft sea balm color */
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+}
